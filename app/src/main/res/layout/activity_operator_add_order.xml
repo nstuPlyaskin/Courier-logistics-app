@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootAddOrder"
+    tools:context=".orders.activity_operator_add_order">
+
+    <Button
+        android:id="@+id/btnAddOrder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/golos_medium"
+        android:text="Создать новый заказ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFillInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/golos_medium"
+        android:text="ЗАПОЛНИТЕ ИНФОРМАЦИЮ"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_delivery_from"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="90dp"
+        android:ems="10"
+        android:fontFamily="@font/golos_medium"
+        android:hint="Адрес отправки"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iconDeliveryFrom2"
+        app:layout_constraintTop_toBottomOf="@+id/tvFillInfo" />
+
+    <ImageView
+        android:id="@+id/iconWeight2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cargo_weight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cargo_weight"
+        app:srcCompat="@drawable/iconweight" />
+
+    <ImageView
+        android:id="@+id/iconCargoName2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cargo_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cargo_name"
+        app:srcCompat="@drawable/iconcargoname" />
+
+    <ImageView
+        android:id="@+id/iconDeliveryFrom2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_delivery_from"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edit_delivery_from"
+        app:srcCompat="@drawable/icondeliveryfrom" />
+
+    <ImageView
+        android:id="@+id/iconDeliveryTo2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_delivery_to"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edit_delivery_to"
+        app:srcCompat="@drawable/icondeliveryto" />
+
+    <ImageView
+        android:id="@+id/iconSize2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cargo_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cargo_size"
+        app:srcCompat="@drawable/iconsize" />
+
+    <EditText
+        android:id="@+id/edit_delivery_to"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="90dp"
+        android:ems="10"
+        android:fontFamily="@font/golos_medium"
+        android:hint="Адрес доставки"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iconDeliveryTo2"
+        app:layout_constraintTop_toBottomOf="@+id/edit_delivery_from" />
+
+    <EditText
+        android:id="@+id/cargo_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="90dp"
+        android:ems="10"
+        android:fontFamily="@font/golos_medium"
+        android:hint="Название груза"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iconCargoName2"
+        app:layout_constraintTop_toBottomOf="@+id/edit_delivery_to" />
+
+    <EditText
+        android:id="@+id/cargo_size"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="90dp"
+        android:ems="10"
+        android:fontFamily="@font/golos_medium"
+        android:hint="Размер груза"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iconSize2"
+        app:layout_constraintTop_toBottomOf="@+id/cargo_name" />
+
+    <EditText
+        android:id="@+id/cargo_weight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="90dp"
+        android:ems="10"
+        android:fontFamily="@font/golos_medium"
+        android:hint="Вес груза"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iconWeight2"
+        app:layout_constraintTop_toBottomOf="@+id/cargo_size" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

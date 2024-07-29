@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".show_courier_current_orders"
+    android:id="@+id/rootCourierCurrentOrders">
+
+
+    <Button
+        android:id="@+id/btnCourierAcceptOrderCourierCurrentOrder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/golos_medium"
+        android:text="ПРИНЯТЬ ЗАКАЗ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvOrderCourierHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="@font/golos_medium"
+        android:gravity="center"
+        android:hint="OrderID"
+        android:text="ИНФОРМАЦИЯ О ЗАКАЗЕ"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="409dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="25dp"
+        android:fadeScrollbars="false"
+        android:isScrollContainer="true"
+        android:nestedScrollingEnabled="true"
+        android:overScrollMode="ifContentScrolls"
+        app:layout_constraintBottom_toTopOf="@+id/btnCourierAcceptOrderCourierCurrentOrder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOrderCourierHeader"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minWidth="50dp"
+            android:minHeight="50dp">
+
+            <TextView
+                android:id="@+id/tvDeliveryFromCourierCurrentOrder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="50dp"
+                android:clickable="true"
+                android:fontFamily="@font/golos_medium"
+                android:hint="delivery from"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iconDeliveryFrom"
+                app:layout_constraintTop_toBottomOf="@+id/tvCargoNameCourierCurrentOrder" />
+
+            <TextView
+                android:id="@+id/tvDeliveryToCourierCurrentOrder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="50dp"
+                android:clickable="true"
+                android:fontFamily="@font/golos_medium"
+                android:hint="delivery to"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iconDeliveryTo"
+                app:layout_constraintTop_toBottomOf="@+id/tvDeliveryFromCourierCurrentOrder" />
+
+            <TextView
+                android:id="@+id/tvCargoNameCourierCurrentOrder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="50dp"
+                android:fontFamily="@font/golos_medium"
+                android:hint="name"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iconCargoName"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvCargoSizeCourierCurrentOrder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="50dp"
+                android:fontFamily="@font/golos_medium"
+                android:hint="Размер не указан"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iconSize"
+                app:layout_constraintTop_toBottomOf="@+id/tvDeliveryToCourierCurrentOrder" />
+
+            <TextView
+                android:id="@+id/tvCargoWeightCourierCurrentOrder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="50dp"
+                android:fontFamily="@font/golos_medium"
+                android:hint="Вес не указан"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iconWeight"
+                app:layout_constraintTop_toBottomOf="@+id/tvCargoSizeCourierCurrentOrder" />
+
+
+            <ImageView
+                android:id="@+id/iconWeight"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="50dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvCargoWeightCourierCurrentOrder"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvCargoWeightCourierCurrentOrder"
+                app:srcCompat="@drawable/iconweight" />
+
+            <ImageView
+                android:id="@+id/iconSize"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="50dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvCargoSizeCourierCurrentOrder"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvCargoSizeCourierCurrentOrder"
+                app:srcCompat="@drawable/iconsize" />
+
+            <ImageView
+                android:id="@+id/iconDeliveryFrom"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="50dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvDeliveryFromCourierCurrentOrder"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvDeliveryFromCourierCurrentOrder"
+                app:srcCompat="@drawable/icondeliveryfrom" />
+
+            <ImageView
+                android:id="@+id/iconDeliveryTo"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="50dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvDeliveryToCourierCurrentOrder"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvDeliveryToCourierCurrentOrder"
+                app:srcCompat="@drawable/icondeliveryto" />
+
+            <ImageView
+                android:id="@+id/iconCargoName"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="50dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvCargoNameCourierCurrentOrder"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvCargoNameCourierCurrentOrder"
+                app:srcCompat="@drawable/iconcargoname" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

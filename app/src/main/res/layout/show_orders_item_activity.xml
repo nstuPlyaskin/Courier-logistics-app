@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootShowOrdersItemActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/btnDeleteItemOrder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/golos_medium"
+        android:text="Удалить заказ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="@font/golos_medium"
+        android:gravity="center"
+        android:text="ИНФОРМАЦИЯ О ЗАКАЗЕ"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="409dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="25dp"
+        android:fadeScrollbars="false"
+        android:isScrollContainer="true"
+        android:nestedScrollingEnabled="true"
+        android:overScrollMode="ifContentScrolls"
+        app:layout_constraintBottom_toTopOf="@+id/btnDeleteItemOrder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeader">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:minWidth="50dp"
+            android:minHeight="50dp">
+
+            <TextView
+                android:id="@+id/tvOrderID"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="50dp"
+                android:fontFamily="@font/golos_medium"
+                android:hint="OrderID"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iconID"
+                app:layout_constraintTop_toBottomOf="@+id/tvCargoWeight" />
+
+            <TextView
+                android:id="@+id/tvDeliveryFrom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="50dp"
+                android:clickable="true"
+                android:fontFamily="@font/golos_medium"
+                android:hint="delivery from"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iconDeliveryFrom"
+                app:layout_constraintTop_toBottomOf="@+id/tvCargoName" />
+
+            <TextView
+                android:id="@+id/tvDeliveryTo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="50dp"
+                android:clickable="true"
+                android:fontFamily="@font/golos_medium"
+                android:hint="delivery to"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iconDeliveryTo"
+                app:layout_constraintTop_toBottomOf="@+id/tvDeliveryFrom" />
+
+            <TextView
+                android:id="@+id/tvCargoName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="50dp"
+                android:fontFamily="@font/golos_medium"
+                android:hint="name"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iconCargoName"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvCargoSize"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="50dp"
+                android:fontFamily="@font/golos_medium"
+                android:hint="Размер не указан"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iconSize"
+                app:layout_constraintTop_toBottomOf="@+id/tvDeliveryTo" />
+
+            <TextView
+                android:id="@+id/tvCargoWeight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="50dp"
+                android:fontFamily="@font/golos_medium"
+                android:hint="Вес не указан"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iconWeight"
+                app:layout_constraintTop_toBottomOf="@+id/tvCargoSize" />
+
+
+            <ImageView
+                android:id="@+id/iconCargoName"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="50dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvCargoName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvCargoName"
+                app:srcCompat="@drawable/iconcargoname" />
+
+            <ImageView
+                android:id="@+id/iconDeliveryTo"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="50dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvDeliveryTo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvDeliveryTo"
+                app:srcCompat="@drawable/icondeliveryto" />
+
+            <ImageView
+                android:id="@+id/iconDeliveryFrom"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="50dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvDeliveryFrom"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvDeliveryFrom"
+                app:srcCompat="@drawable/icondeliveryfrom" />
+
+            <ImageView
+                android:id="@+id/iconSize"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="50dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvCargoSize"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvCargoSize"
+                app:srcCompat="@drawable/iconsize" />
+
+            <ImageView
+                android:id="@+id/iconWeight"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="50dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvCargoWeight"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvCargoWeight"
+                app:srcCompat="@drawable/iconweight" />
+
+            <ImageView
+                android:id="@+id/iconID"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="50dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvOrderID"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvOrderID"
+                app:srcCompat="@drawable/iconid" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

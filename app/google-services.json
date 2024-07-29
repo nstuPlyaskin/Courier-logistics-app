@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "114181568550",
+    "firebase_url": "https://courier-logistics-app-default-rtdb.firebaseio.com",
+    "project_id": "courier-logistics-app",
+    "storage_bucket": "courier-logistics-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:114181568550:android:718b7f99eeb1f10778cee7",
+        "android_client_info": {
+          "package_name": "com.example.courier"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "114181568550-1knac4ifmk7t0tv5tqnqtn3u19fmvjm5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkOL14xjyEWW28CDWqbbCA6t7qdsIzxFE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "114181568550-1knac4ifmk7t0tv5tqnqtn3u19fmvjm5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

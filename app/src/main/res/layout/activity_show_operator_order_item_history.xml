@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".show_operator_order_item_history"
+    android:id="@+id/rootShowOperatorItemHistory">
+
+    <TextView
+        android:id="@+id/tvHistoryOrderOperatorHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="@font/golos_medium"
+        android:gravity="center"
+        android:hint="OrderID"
+        android:text="ИНФОРМАЦИЯ О ЗАКАЗЕ"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnOperatorSendHistoryOrderToEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/golos_medium"
+        android:text="ПОДЕЛИТЬСЯ ЗАКАЗОМ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ScrollView
+        android:id="@+id/scrollViewHistoryOrders"
+        android:layout_width="409dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="45dp"
+        android:fadeScrollbars="false"
+        android:isScrollContainer="true"
+        android:nestedScrollingEnabled="true"
+        android:overScrollMode="ifContentScrolls"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHistoryOrderOperatorHeader"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minWidth="50dp"
+            android:minHeight="50dp">
+
+            <TextView
+                android:id="@+id/tvDeliveryFromOperatorHistoryOrder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="50dp"
+                android:clickable="true"
+                android:fontFamily="@font/golos_medium"
+                android:hint="delivery from"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iconDeliveryFrom"
+                app:layout_constraintTop_toBottomOf="@+id/tvCargoNameOperatorHistoryOrder" />
+
+            <TextView
+                android:id="@+id/tvDeliveryToOperatorHistoryOrder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="50dp"
+                android:clickable="true"
+                android:fontFamily="@font/golos_medium"
+                android:hint="delivery to"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iconDeliveryTo"
+                app:layout_constraintTop_toBottomOf="@+id/tvDeliveryFromOperatorHistoryOrder" />
+
+            <TextView
+                android:id="@+id/tvCargoNameOperatorHistoryOrder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="50dp"
+                android:fontFamily="@font/golos_medium"
+                android:hint="name"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iconCargoName"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvCargoSizeOperatorHistoryOrder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="50dp"
+                android:fontFamily="@font/golos_medium"
+                android:hint="Размер не указан"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iconSize"
+                app:layout_constraintTop_toBottomOf="@+id/tvDeliveryToOperatorHistoryOrder" />
+
+            <TextView
+                android:id="@+id/tvCargoWeightOperatorHistoryOrder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="50dp"
+                android:fontFamily="@font/golos_medium"
+                android:hint="Вес не указан"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iconWeight"
+                app:layout_constraintTop_toBottomOf="@+id/tvCargoSizeOperatorHistoryOrder" />
+
+            <TextView
+                android:id="@+id/tvShippingByOperatorHistoryOrder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="50dp"
+
+                android:fontFamily="@font/golos_medium"
+                android:hint="shippingby"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iconShippingBy"
+                app:layout_constraintTop_toBottomOf="@+id/tvCargoWeightOperatorHistoryOrder" />
+
+
+            <TextView
+                android:id="@+id/tvFinishTimeOperatorHistoryOrder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="50dp"
+                android:fontFamily="@font/golos_medium"
+                android:hint="finishTime"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iconFinishTime"
+                app:layout_constraintTop_toBottomOf="@+id/tvShippingByOperatorHistoryOrder" />
+
+            <ImageView
+                android:id="@+id/iconFinishTime"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="50dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvFinishTimeOperatorHistoryOrder"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvFinishTimeOperatorHistoryOrder"
+                app:srcCompat="@drawable/icontime" />
+
+            <ImageView
+                android:id="@+id/iconWeight"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="50dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvCargoWeightOperatorHistoryOrder"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvCargoWeightOperatorHistoryOrder"
+                app:srcCompat="@drawable/iconweight" />
+
+            <ImageView
+                android:id="@+id/iconShippingBy"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="50dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvShippingByOperatorHistoryOrder"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvShippingByOperatorHistoryOrder"
+                app:srcCompat="@drawable/iconcourier" />
+
+            <ImageView
+                android:id="@+id/iconSize"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="50dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvCargoSizeOperatorHistoryOrder"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvCargoSizeOperatorHistoryOrder"
+                app:srcCompat="@drawable/iconsize" />
+
+            <ImageView
+                android:id="@+id/iconDeliveryFrom"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="50dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvDeliveryFromOperatorHistoryOrder"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvDeliveryFromOperatorHistoryOrder"
+                app:srcCompat="@drawable/icondeliveryfrom" />
+
+            <ImageView
+                android:id="@+id/iconDeliveryTo"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="50dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvDeliveryToOperatorHistoryOrder"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvDeliveryToOperatorHistoryOrder"
+                app:srcCompat="@drawable/icondeliveryto" />
+
+            <ImageView
+                android:id="@+id/iconCargoName"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="50dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvCargoNameOperatorHistoryOrder"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvCargoNameOperatorHistoryOrder"
+                app:srcCompat="@drawable/iconcargoname" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

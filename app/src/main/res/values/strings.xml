@@ -1,0 +1,60 @@
+<resources>
+
+    <!--WELCOME WINDOW-->
+
+    <string name="app_name">Courier</string>
+    <string name="logo">COURIER</string>
+    <string name="softUserDeliveryman">COURIER</string>
+    <string name="softUserOperator">OPERATOR</string>
+    <string name="softUserUnknown">SELECT USER TYPE</string>
+    <string name="companyName">Firefox delivery corporation</string>
+    <string name="title_activity_welcome_window">welcome_window</string>
+
+    <!--DELIVERY MAN - HOME -->
+
+    <string name="operatorWelcomeMessage">WELCOME BACK</string>
+
+    <string name="operatorHomeWarehouse">ВСЕГО ГРУЗА НА СКЛАДЕ</string>
+    <string name="operatorHomeWarehouseNumbers">На складе 367 едениц груза. Это почти 4 тонны!</string>
+
+    <string name="operatorHomeInProgress">СЕЙЧАС ДОСТАВЛЯЮТ</string>
+    <string name="operatorHomeInProgressNumbers">Прямо сейчас наши 8 курьеров доставляют 5 заказов!</string>
+
+    <string name="operatorHomeComplete">ВСЕГО ДОСТАВОК ЗА СЕГОДНЯ</string>
+    <string name="operatorHomeCompleteNumbers">Сегодня наша команда доставила 97 грузов! Хорошая работа!</string>
+
+    <string name="operatorHomeTrackCouriers">ОТСЛЕЖИВАНИЕ ЗАКАЗОВ</string>
+    <string name="operatorHomeTrackCouriersDisc">В меню оператора можно отследить статус выполнения заказа.</string>
+
+    <!--OPERATOR LOGIN-->
+
+    <string name="labelLoginOperator">AUTHORIZATION</string>
+    <string name="operatorCode">oper6</string>
+
+
+    <!--OPERATOR ADD NEW COURIER-->
+
+    <string name="labelNewCourier">СОЗДАТЬ НОВЫЙ АККАУНТ</string>
+    <string name="tvCreateNewCourier">Нажмите сюда что бы создать новый аккаунт для курьера.</string>
+
+    <string name="tvCourierList">ПОСМОТРЕТЬ СПИСОК АККАУНТОВ</string>
+    <string name="labelCourierList">Нажмите сюда что бы посмотреть список курьерских аккаунтов.</string>
+
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    Attention
+    D:\PROGS\Courier2\app\build\intermediates\incremental\mergeDebugResources\stripped.dir\layout\fragment_operator_dialog_creating_account.xml:32:
+    error: resource string/tvOperatorAttention (aka com.example.courier:string/tvOperatorAttention)
+    not found.
+
+
+    <string name="hello_first_fragment"></string>
+    <string name="hello_second_fragment"></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment"></string>
+</resources>

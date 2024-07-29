@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootHomePage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarStyle="outsideOverlay"
+    android:scrollbars="vertical"
+    android:verticalScrollbarPosition="right"
+    tools:context=".OperatorHomeFragment">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="409dp"
+        android:layout_height="0dp"
+        android:fadeScrollbars="false"
+        android:isScrollContainer="true"
+        android:nestedScrollingEnabled="true"
+        android:overScrollMode="ifContentScrolls"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:minWidth="50dp"
+            android:minHeight="50dp">
+
+            <TextView
+                android:id="@+id/labelCargo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/golos_medium"
+                android:letterSpacing="0"
+                android:text="@string/operatorHomeWarehouse"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iconBox"
+                app:layout_constraintTop_toTopOf="@+id/iconBox" />
+
+            <TextView
+                android:id="@+id/labelTrack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/golos_medium"
+                android:letterSpacing="0"
+                android:text="@string/operatorHomeTrackCouriers"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iconTrack"
+                app:layout_constraintTop_toTopOf="@+id/iconTrack" />
+
+            <TextView
+                android:id="@+id/labelTrack2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/golos_medium"
+                android:letterSpacing="0"
+                android:text="@string/operatorHomeInProgress"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iconInProgress"
+                app:layout_constraintTop_toTopOf="@+id/iconInProgress" />
+
+            <TextView
+                android:id="@+id/labelTrack3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/golos_medium"
+                android:letterSpacing="0"
+                android:text="@string/operatorHomeComplete"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iconInProgress8"
+                app:layout_constraintTop_toTopOf="@+id/iconInProgress8" />
+
+            <ImageView
+                android:id="@+id/iconBox"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/storage"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/storage" />
+
+            <ImageView
+                android:id="@+id/iconTrack"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/tracking"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iconBox" />
+
+            <ImageView
+                android:id="@+id/iconInProgress"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/inprogress"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iconTrack" />
+
+            <ImageView
+                android:id="@+id/iconInProgress8"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/complete"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iconInProgress" />
+
+            <TextView
+                android:id="@+id/totalCargoWarehouse"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="@font/golos_medium"
+                android:foregroundGravity="left"
+                android:gravity="left"
+                android:text="@string/operatorHomeWarehouseNumbers"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/iconBox"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iconBox"
+                app:layout_constraintTop_toBottomOf="@+id/labelCargo" />
+
+            <TextView
+                android:id="@+id/labelTrackDisc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="@font/golos_medium"
+                android:foregroundGravity="left"
+                android:gravity="left"
+                android:text="@string/operatorHomeTrackCouriersDisc"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/iconTrack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iconTrack"
+                app:layout_constraintTop_toBottomOf="@+id/labelTrack" />
+
+            <TextView
+                android:id="@+id/labelTrackDisc2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="@font/golos_medium"
+                android:foregroundGravity="left"
+                android:gravity="left"
+                android:text="@string/operatorHomeInProgressNumbers"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/iconInProgress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iconInProgress"
+                app:layout_constraintTop_toBottomOf="@+id/labelTrack2" />
+
+            <TextView
+                android:id="@+id/labelTrackDisc3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/golos_medium"
+                android:foregroundGravity="left"
+                android:gravity="left"
+                android:text="@string/operatorHomeCompleteNumbers"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/iconInProgress8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/iconInProgress8"
+                app:layout_constraintTop_toBottomOf="@+id/labelTrack3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

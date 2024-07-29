@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".courierFragments.CourierDashboardFragment"
+    android:id="@+id/rootCourierOrdersDashboard">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="409dp"
+        android:layout_height="0dp"
+        android:fadeScrollbars="false"
+        android:isScrollContainer="true"
+        android:nestedScrollingEnabled="true"
+        android:overScrollMode="ifContentScrolls"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:minWidth="50dp"
+            android:minHeight="50dp">
+
+            <TextView
+                android:id="@+id/labelOrderList"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/golos_medium"
+                android:letterSpacing="0"
+                android:text="СПИСОК ЗАКАЗОВ"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iconOrderList"
+                app:layout_constraintTop_toTopOf="@+id/iconOrderList" />
+
+
+            <ImageView
+                android:id="@+id/iconOrderList"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/iconorderlist"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvCourierOrderListDashboard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="@font/golos_medium"
+                android:foregroundGravity="left"
+                android:gravity="left"
+                android:text="Нажмите сюда что бы посмотреть список доступных заказов!"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/iconOrderList"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iconOrderList"
+                app:layout_constraintTop_toBottomOf="@+id/labelOrderList" />
+
+
+            <ImageView
+                android:id="@+id/iconCurrentOrders"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="80dp"
+                android:src="@drawable/iconcurrentorders"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvCourierOrderListDashboard" />
+
+            <TextView
+                android:id="@+id/labelCurrentOrdersCourier"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/golos_medium"
+                android:letterSpacing="0"
+                android:text="ПРИНЯТЫЕ ЗАКАЗЫ"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iconCurrentOrders"
+                app:layout_constraintTop_toTopOf="@+id/iconCurrentOrders" />
+
+            <TextView
+                android:id="@+id/tvCourierAcceptedOrders"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/golos_medium"
+                android:foregroundGravity="left"
+                android:gravity="left"
+                android:text="Нажите сюда что бы посмотреть ваши текущие заказы!"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/iconCurrentOrders"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iconCurrentOrders"
+                app:layout_constraintTop_toBottomOf="@+id/labelCurrentOrdersCourier" />
+
+            <TextView
+                android:id="@+id/labelCompletedOrdersCourier"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/golos_medium"
+                android:letterSpacing="0"
+                android:text="ИСТОРИЯ ЗАКАЗОВ"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iconCompletedOrders"
+                app:layout_constraintTop_toTopOf="@+id/iconCompletedOrders" />
+
+            <ImageView
+                android:id="@+id/iconCompletedOrders"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="80dp"
+                android:src="@drawable/iconcompleteorders"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvCourierAcceptedOrders" />
+
+            <TextView
+                android:id="@+id/tvCourierCompletedOrderList"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/golos_medium"
+                android:foregroundGravity="left"
+                android:gravity="left"
+                android:text="Нажите сюда что бы посмотреть историю выполненных заказов!"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/iconCompletedOrders"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iconCompletedOrders"
+                app:layout_constraintTop_toBottomOf="@+id/labelCompletedOrdersCourier" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2825" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/drawable/ic_bg.xml" value="0.2825" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2825" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.172" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/drawable/item_select.xml" value="0.2695" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/drawable/item_selector.xml" value="0.2305" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/drawable/round_corner.xml" value="0.2305" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/font/golos.xml" value="0.24814814814814815" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/activity_chat.xml" value="0.2760416666666667" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/activity_courier_current_orders.xml" value="0.278125" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/activity_courier_dasboard.xml" value="0.278125" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/activity_courier_home_page.xml" value="0.278125" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/activity_courier_login.xml" value="0.278125" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/activity_courier_map_fragment.xml" value="0.278125" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/activity_courier_order_history.xml" value="0.278125" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/activity_courier_read_opders.xml" value="0.278125" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/activity_courier_show_accepted_orders.xml" value="0.278125" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/activity_login.xml" value="0.278125" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/activity_operator_add_order.xml" value="0.2625" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/activity_operator_dialog_deleting_account.xml" value="0.278125" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/activity_operator_home_page.xml" value="0.25" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/activity_operator_item_accepted_orders.xml" value="0.278125" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/activity_operator_login.xml" value="0.25" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/activity_operator_read_opders.xml" value="0.278125" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/activity_operator_read_users.xml" value="0.278125" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/activity_operator_register_courier.xml" value="0.278125" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/activity_operator_show_accepted_orders.xml" value="0.278125" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/activity_show_courier_current_orders.xml" value="0.25" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/activity_show_courier_item_accepted_orders.xml" value="0.25" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/activity_show_courier_item_history_orders.xml" value="0.278125" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/activity_show_operator_order_history.xml" value="0.25" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/activity_show_operator_order_item_history.xml" value="0.25" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/activity_show_orders_item_courier.xml" value="0.278125" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/activity_welcome_page.xml" value="0.278125" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/activity_welcome_window.xml" value="0.22395833333333334" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/content_welcome_window.xml" value="0.22395833333333334" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/dialog_box_courier_complete_order.xml" value="0.278125" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/fragment_courier_chat.xml" value="0.1" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/fragment_courier_dashboard.xml" value="0.33" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/fragment_courier_map.xml" value="0.278125" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/fragment_couriers_courier.xml" value="0.278125" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/fragment_dashboard_courier.xml" value="0.22395833333333334" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/fragment_first.xml" value="0.22395833333333334" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/fragment_home_courier.xml" value="0.22395833333333334" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/fragment_map.xml" value="0.278125" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/fragment_map_courier.xml" value="0.278125" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/fragment_operator_couriers.xml" value="0.2675925925925926" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/fragment_operator_dashboard.xml" value="0.33" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/fragment_operator_dialog_creating_account.xml" value="0.278125" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/fragment_operator_home.xml" value="0.33" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/fragment_operator_map.xml" value="0.25" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/fragment_second.xml" value="0.22395833333333334" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/hi_page.xml" value="0.25" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/list_item.xml" value="0.278125" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/login_dialog.xml" value="0.278125" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/show_courie_current_orders.xml" value="0.278125" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/show_orders_item_activity.xml" value="0.25" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/show_user_list_layout.xml" value="0.25" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/signup_dialog.xml" value="0.278125" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/layout/test.xml" value="1.136513157894737" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/menu/bottom_menu.xml" value="0.278125" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/menu/bottom_menu_courier.xml" value="0.278125" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/menu/bottommenu.xml" value="0.22395833333333334" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/menu/item_menu.xml" value="0.278125" />
+        <entry key="..\:/PROGS/Courier2/app/src/main/res/menu/round_corner.xml" value="0.278125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.courier">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Courier">
+        <activity
+            android:name=".message.activity_chat"
+            android:exported="false" />
+        <activity
+            android:name=".show_operator_order_item_history"
+            android:exported="false" />
+        <activity
+            android:name=".show_operator_order_history"
+            android:exported="false" />
+        <activity
+            android:name=".operator_item_accepted_orders"
+            android:exported="false" />
+        <activity
+            android:name=".operator_show_accepted_orders"
+            android:exported="false" />
+        <activity
+            android:name=".show_courier_item_history_orders"
+            android:exported="false" />
+        <activity
+            android:name=".courierFragments.activity_courier_order_history"
+            android:exported="false" />
+        <activity
+            android:name=".courierActivity.show_courier_item_accepted_orders"
+            android:exported="false" />
+        <activity
+            android:name=".courierActivity.courier_show_accepted_orders"
+            android:exported="false" />
+        <activity
+            android:name=".show_courier_current_orders"
+            android:exported="false" />
+        <activity
+            android:name=".courierActivity.courier_current_orders"
+            android:exported="false" />
+        <activity
+            android:name=".courierActivity.courier_dasboard"
+            android:exported="false" />
+        <activity
+            android:name=".courierActivity.courier_read_opders"
+            android:exported="false" />
+        <activity
+            android:name=".activity_operator_read_opders"
+            android:exported="false" />
+        <activity
+            android:name=".orders.activity_operator_add_order"
+            android:exported="false" />
+        <activity
+            android:name=".dialogBoxes.operator_dialog_deleting_account"
+            android:exported="false" />
+        <activity
+            android:name=".activity_operator_login"
+            android:exported="false" />
+        <activity
+            android:name=".activity_courier_login"
+            android:exported="false" />
+        <activity
+            android:name=".activity_operator_register_courier"
+            android:exported="false" />
+        <activity
+            android:name=".OperatorHomePage"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomePage"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            // запрет на поворот экрана
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".bd.readUser" />
+        <activity android:name=".bd.showUsersItemActivity" />
+        <activity android:name=".bd.showOrdersItemActivity" />
+        <activity android:name=".bd.readOrder" />
+        <activity android:name=".CourierHomePage" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
